@@ -1,0 +1,58 @@
+class String
+  def is_number?
+    true if Float(self) rescue false
+  end
+end
+
+class Chunker
+  def initialize
+    @subject = ["Dan","Píro","Canale","Rak","Zymonová","Ender Dragon","Creeper","Jolanda","Kuruteku_09","Keralis","Miley Cyrus","Mumbo","Mike Shinoda","Lindsey Stirling","Superpennys139"]
+    @verb = ["se dělá","si mastí","onanuje","znásilňuje Mařku","znásilňuje Ivonu","sleduje porno","jí majonézu","stříká do sklenice od okurkového salátu","honí buřtíka","vraždí učitele","twerkuje","líže kladivo"]
+    @ending = ["v lednici","na záchodě","ve sborovně","v kabinetě fyziky","na fairwayi","u Dana doma","v Supermarketu","ve stánku s kuřaty","na Fortune Islandu","v Polsku","na koncertě Lindsey Stirling","za tvými zády"]
+  end
+
+  def roll
+
+    split = @command.split(' ', 2)
+    split_roll = split[0]
+    if !split_roll.eql? "roll"
+      puts "Unknown command!"
+    return false
+    end
+    if !split[1]
+      puts "Invalid number of arguments!"
+    return false
+    end
+
+    if !split[1].is_number?
+      puts "#{split[1]} is not a number!"
+    return false
+    end
+
+    split_i = split[1].to_i
+    split_i.times do
+      puts "#{@subject.sample} #{@verb.sample} #{@ending.sample}."
+
+    end
+
+  end
+
+  def run
+    exit = false
+
+    while !exit
+      puts "Type 'roll number' to roll the dice and get your sentences! Or you can type exit to exit..."
+      command = gets.chomp
+      case command
+      when "exit"
+        exit = true
+      else
+      @command = command
+      roll
+      end
+    end
+  end
+end
+
+chunker = Chunker.new
+chunker.run
