@@ -6,9 +6,9 @@ end
 
 class Chunker
   def initialize
-    @subject = ["Dan","Píro","Canale","Rak","Zymonová","Ender Dragon","Creeper","Jolanda","Kuruteku_09","Keralis","Miley Cyrus","Mumbo","Mike Shinoda","Lindsey Stirling","Superpennys139"]
-    @verb = ["se dělá","si mastí","onanuje","znásilňuje Mařku","znásilňuje Ivonu","sleduje porno","jí majonézu","stříká do sklenice od okurkového salátu","honí buřtíka","vraždí učitele","twerkuje","líže kladivo"]
-    @ending = ["v lednici","na záchodě","ve sborovně","v kabinetě fyziky","na fairwayi","u Dana doma","v Supermarketu","ve stánku s kuřaty","na Fortune Islandu","v Polsku","na koncertě Lindsey Stirling","za tvými zády"]
+    @subject = ["Dan","Píro","Canale","Rak","Zymonová","Ender Dragon","Creeper","Jolanda","Kuruteku_09","Keralis","Miley Cyrus","Mumbo","Mike Shinoda","Lindsey Stirling","Superpennys139","Herout","Nemčoková","Sakalová","Štěpánek","Gynekolog","Prezident Semen","Andršová","Exner","Niňuňu","Justin Bieber","Roko","Metrix","SethBling","Dragnoz"]
+    @verb = ["se dělá","si mastí","onanuje","znásilňuje Mařku","znásilňuje Ivonu","sleduje porno","jí majonézu","stříká do sklenice od okurkového salátu","honí buřtíka","vraždí učitele","twerkuje","líže kladivo","mlátí do klávesnice a druhou rukou s hladí pubické ochlupení","olizuje plakát s fotkou Dana","trhá učebnici němčiny","poslouchá Pe Cimpoi"]
+    @ending = ["v lednici","na záchodě","ve sborovně","v kabinetě fyziky","na fairwayi","u Dana doma","v Supermarketu","ve stánku s kuřaty","na Fortune Islandu","v Polsku","na koncertě Lindsey Stirling","za tvými zády","na střeše Danova domu","v bordelu","v Drážďanech","ve vlaku","v Biografu Modřany","v posteli","na balkóně","v taxíku","na pláži","v učebně IKT"]
   end
 
   def roll
