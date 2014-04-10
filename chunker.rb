@@ -1,3 +1,5 @@
+puts "Welcome to Chunker Beta 1.3.22!"
+
 class String
   def is_number?
     true if Float(self) rescue false
