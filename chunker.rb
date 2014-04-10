@@ -54,9 +54,8 @@ class Chunker
   end
 
   def run
-    puts "Welcome to Chunker Beta 1.3.22!"
-
-   
+    puts "Welcome to Chunker Beta 1.3.23!"
+       
 
     while true
       puts "Type 'roll number' to roll the dice and get your sentences! Or you can type exit to exit..."
